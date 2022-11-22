@@ -1,0 +1,1170 @@
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+    -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+    display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+/*CSS starts here*/
+
+html {
+    font-size: 1px;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+@media only screen and (max-width: 599px) {
+
+    /*Overall style of mobile navigation*/
+    .mobileNavContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .topNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo . ."
+            "logo . menuIcon"
+            "logo . .";
+        top: 0;
+        left: 0;
+        align-items: center;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .menuIcon {
+        grid-area: menuIcon;
+    }
+
+    .hamburger {
+        float: right;
+        position: absolute;
+        position: relative;
+        display: block;
+        width: 45px;
+        cursor: pointer;
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .hamburger .bar, .hamburger:after, .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .sideNav {
+        position: fixed;
+        right: -500px;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.6);
+        transition: .5s;
+        padding: 150px 0px;
+    }
+
+    .sideNav div {
+        padding: 20px 30px;
+        font-size: 25rem;
+        color: #000;
+        font-family: "Calibri";
+        text-align: right;
+    }
+
+    .sideNav.active {
+        right: 0;
+    }
+
+    .sideNav .logo, .social {
+        display: none;
+    }
+
+    /*Overall style of content pages*/
+    .contentContainer {
+        font-size: 23rem;
+        color: #000;
+        font-family: "Calibri";
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contentContainer .heading {
+        margin-top: 25rem;
+        font-size: 25rem;
+        font-weight: bold;
+    }
+
+    hr.headinglinebreak {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+    .headinglinebreak {
+        width: 100%;
+        margin: 0 0 35rem 0;
+    }
+
+    /*Home page*/
+    .hero {
+        margin: 0 auto;
+        max-width: 90%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    /*About page*/
+    .abouttext {
+        text-align: left;
+        margin-top: 25rem;
+    }
+
+    .colouredvbar {
+        color: #FFA500;
+    }
+
+    .ballyfinItalic {
+        font-style: italic;
+        color: #949494;
+    }
+
+    .smallSpace {
+        font-size: 10rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    /*Overall style of mobile navigation*/
+    .mobileNavContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .topNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo . ."
+            "logo . menuIcon"
+            "logo . .";
+        top: 0;
+        left: 0;
+        align-items: center;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .menuIcon {
+        grid-area: menuIcon;
+    }
+
+    .hamburger {
+        float: right;
+        position: absolute;
+        position: relative;
+        display: block;
+        width: 45px;
+        cursor: pointer;
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .hamburger .bar, .hamburger:after, .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .sideNav {
+        position: fixed;
+        right: -500px;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.6);
+        transition: .5s;
+        padding: 150px 0px;
+    }
+
+    .sideNav div {
+        padding: 20px 30px;
+        font-size: 25rem;
+        color: #000;
+        font-family: "Calibri";
+        text-align: right;
+    }
+
+    .sideNav.active {
+        right: 0;
+    }
+
+    .sideNav .logo, .social {
+        display: none;
+    }
+
+    /*Overall style of content pages*/
+    .contentContainer {
+        font-size: 23rem;
+        color: #000;
+        font-family: "Calibri";
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contentContainer .heading {
+        margin-top: 25rem;
+        font-size: 25rem;
+        font-weight: bold;
+    }
+
+    hr.headinglinebreak {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+    .headinglinebreak {
+        width: 100%;
+        margin: 0 0 35rem 0;
+    }
+
+    /*Home page*/
+    .hero {
+        margin: 0 auto;
+        max-width: 90%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    /*About page*/
+    .abouttext {
+        text-align: left;
+        margin-top: 25rem;
+    }
+
+    .colouredvbar {
+        color: #FFA500;
+    }
+
+    .ballyfinItalic {
+        font-style: italic;
+        color: #949494;
+    }
+
+    .smallSpace {
+        font-size: 10rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* The sidebar menu */
+    .sideNav {
+        padding: 0rem 0rem 0rem 25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "logo logo logo"
+            "links links links"
+            "social social social";
+        grid-area: sidebar;
+        top: 0;
+        left: 0;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        overflow: hidden;
+        font-size: 25rem;
+        font-family: "Calibri";
+    }
+
+    .topNav {
+        display: none;
+    }
+
+    .logo {
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "home home home"
+            "about about about"
+            "weddingCakes weddingCakes weddingCakes"
+            "celebrationCakes celebrationCakes celebrationCakes"
+            "contact contact contact"
+            ". . ."
+            ". . .";
+        grid-area: links;
+    }
+
+    .links div a {
+        color: #000;
+        transition: color ease 0.60s;
+        position: relative;
+    }
+
+
+    .links div a:visited {
+        color: #000;
+    }
+
+    .links div a:hover {
+        color: #949494;
+    }
+
+    .links div a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+        transform: scaleX(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in;
+    }
+
+    .links div a:hover::after {
+        transform: scaleX(1);
+        transform-origin: top;
+    }
+
+    .home {
+        grid-area: home;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about {
+        grid-area: about;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .weddingCakes {
+        grid-area: weddingCakes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .celebrationCakes {
+        grid-area: celebrationCakes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        grid-area: contact;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". instagram . facebook ."
+            ". . . . ."
+            ". . . . .";
+        grid-area: social;
+    }
+
+    .instagram {
+        grid-area: instagram;
+        width: 40rem;
+    }
+
+    .facebook {
+        grid-area: facebook;
+        width: 40rem;
+    }
+
+    /*Overall style of content pages*/
+    .contentContainer {
+        font-size: 23rem;
+        color: #000;
+        font-family: "Calibri";
+        margin: 0 auto;
+    }
+
+    .contentContainer .heading {
+        margin-top: 25rem;
+        font-size: 25rem;
+        font-weight: bold;
+    }
+
+    hr.headinglinebreak {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+    .headinglinebreak {
+        width: 100%;
+        margin: 0 0 35rem 0;
+    }
+
+    .bottomSpace {
+        padding-top: 70px;
+    }
+
+    /*Home page*/
+    .hero {
+        margin-left: 300px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        height: 100%;
+        grid-template-areas:
+            "hero";
+        place-items: center;
+    }
+
+    .hero img {
+        grid-area: hero;
+        max-width: 85%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    /*About page*/
+    .abouttext {
+        text-align: left;
+        margin-top: 25rem;
+    }
+
+    .colouredvbar {
+        color: #FFA500;
+    }
+
+    .ballyfinItalic {
+        font-style: italic;
+        color: #949494;
+    }
+
+    .smallSpace {
+        font-size: 10rem;
+    }
+
+    .contentContainer {
+        margin-left: 300px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        height: 100%;
+        grid-template-areas:
+            "about";
+        place-items: center;
+    }
+
+    .contentContainer .aboutContent {
+        grid-area: about;
+        max-width: 85%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+    }
+
+    .aboutContent img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
+        grid-area: hero;
+        max-width: 60%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* The sidebar menu */
+    .sideNav {
+        padding: 0rem 0rem 0rem 25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "logo logo logo"
+            "links links links"
+            "social social social";
+        grid-area: sidebar;
+        top: 0;
+        left: 0;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        overflow: hidden;
+        font-size: 25rem;
+        font-family: "Calibri";
+    }
+
+    .topNav {
+        display: none;
+    }
+
+    .logo {
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "home home home"
+            "about about about"
+            "weddingCakes weddingCakes weddingCakes"
+            "celebrationCakes celebrationCakes celebrationCakes"
+            "contact contact contact"
+            ". . ."
+            ". . .";
+        grid-area: links;
+    }
+
+    .links div a {
+        color: #000;
+        transition: color ease 0.60s;
+        position: relative;
+    }
+
+
+    .links div a:visited {
+        color: #000;
+    }
+
+    .links div a:hover {
+        color: #949494;
+    }
+
+    .links div a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+        transform: scaleX(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in;
+    }
+
+    .links div a:hover::after {
+        transform: scaleX(1);
+        transform-origin: top;
+    }
+
+    .home {
+        grid-area: home;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about {
+        grid-area: about;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .weddingCakes {
+        grid-area: weddingCakes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .celebrationCakes {
+        grid-area: celebrationCakes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        grid-area: contact;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". instagram . facebook ."
+            ". . . . ."
+            ". . . . .";
+        grid-area: social;
+    }
+
+    .instagram {
+        grid-area: instagram;
+        width: 40rem;
+    }
+
+    .facebook {
+        grid-area: facebook;
+        width: 40rem;
+    }
+
+    /*Overall style of content pages*/
+    .contentContainer {
+        font-size: 23rem;
+        color: #000;
+        font-family: "Calibri";
+        margin: 0 auto;
+    }
+
+    .contentContainer .heading {
+        margin-top: 25rem;
+        font-size: 25rem;
+        font-weight: bold;
+    }
+
+    hr.headinglinebreak {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+    .headinglinebreak {
+        width: 100%;
+        margin: 0 0 35rem 0;
+    }
+
+    .bottomSpace {
+        padding-top: 70px;
+    }
+
+    /*Home page*/
+    .hero {
+        margin-left: 300px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        height: 100%;
+        grid-template-areas:
+            "hero";
+        place-items: center;
+    }
+
+    .hero img {
+        grid-area: hero;
+        max-width: 85%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    /*About page*/
+    .abouttext {
+        text-align: left;
+        margin-top: 25rem;
+    }
+
+    .colouredvbar {
+        color: #FFA500;
+    }
+
+    .ballyfinItalic {
+        font-style: italic;
+        color: #949494;
+    }
+
+    .smallSpace {
+        font-size: 10rem;
+    }
+
+    .contentContainer {
+        margin-left: 300px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        height: 100%;
+        grid-template-areas:
+            "about";
+        place-items: center;
+    }
+
+    .contentContainer .aboutContent {
+        grid-area: about;
+        max-width: 85%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+    }
+
+    .aboutContent img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
+        grid-area: hero;
+        max-width: 60%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* The sidebar menu */
+    .sideNav {
+        padding: 0rem 0rem 0rem 25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "logo logo logo"
+            "links links links"
+            "social social social";
+        grid-area: sidebar;
+        top: 0;
+        left: 0;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        overflow: hidden;
+        font-size: 25rem;
+        font-family: "Calibri";
+    }
+
+    .topNav {
+        display: none;
+    }
+
+    .logo {
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "home home home"
+            "about about about"
+            "weddingCakes weddingCakes weddingCakes"
+            "celebrationCakes celebrationCakes celebrationCakes"
+            "contact contact contact"
+            ". . ."
+            ". . .";
+        grid-area: links;
+    }
+
+    .links div a {
+        color: #000;
+        transition: color ease 0.60s;
+        position: relative;
+    }
+
+
+    .links div a:visited {
+        color: #000;
+    }
+
+    .links div a:hover {
+        color: #949494;
+    }
+
+    .links div a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+        transform: scaleX(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in;
+    }
+
+    .links div a:hover::after {
+        transform: scaleX(1);
+        transform-origin: top;
+    }
+
+    .home {
+        grid-area: home;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about {
+        grid-area: about;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .weddingCakes {
+        grid-area: weddingCakes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .celebrationCakes {
+        grid-area: celebrationCakes;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        grid-area: contact;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". instagram . facebook ."
+            ". . . . ."
+            ". . . . .";
+        grid-area: social;
+    }
+
+    .instagram {
+        grid-area: instagram;
+        width: 40rem;
+    }
+
+    .facebook {
+        grid-area: facebook;
+        width: 40rem;
+    }
+
+    /*Overall style of content pages*/
+    .contentContainer {
+        font-size: 23rem;
+        color: #000;
+        font-family: "Calibri";
+        margin: 0 auto;
+    }
+
+    .contentContainer .heading {
+        margin-top: 25rem;
+        font-size: 25rem;
+        font-weight: bold;
+    }
+
+    hr.headinglinebreak {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+    .headinglinebreak {
+        width: 100%;
+        margin: 0 0 35rem 0;
+    }
+
+    .bottomSpace {
+        padding-top: 70px;
+    }
+
+    /*Home page*/
+    .hero {
+        margin-left: 300px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        height: 100%;
+        grid-template-areas:
+            "hero";
+        place-items: center;
+    }
+
+    .hero img {
+        grid-area: hero;
+        max-width: 85%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    /*About page*/
+    .abouttext {
+        text-align: left;
+        margin-top: 25rem;
+    }
+
+    .colouredvbar {
+        color: #FFA500;
+    }
+
+    .ballyfinItalic {
+        font-style: italic;
+        color: #949494;
+    }
+
+    .smallSpace {
+        font-size: 10rem;
+    }
+
+    .contentContainer {
+        margin-left: 300px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        height: 100%;
+        grid-template-areas:
+            "about";
+        place-items: center;
+    }
+
+    .contentContainer .aboutContent {
+        grid-area: about;
+        max-width: 85%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+    }
+
+    .aboutContent img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
+        grid-area: hero;
+        max-width: 60%;
+        width: auto;
+        max-height: 90%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+    }
+
+}
