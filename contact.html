@@ -31,7 +31,7 @@
                         alt="The Cake Company Ballyfin Logo"></a>
             </div>
             <nav aria-label="links" class="links">
-                <div class="home"><a class="current" href="index.html">Home</a></div>
+                <div class="home"><a href="index.html">Home</a></div>
                 <div class="about"><a href="about.html">About</a></div>
                 <div class="weddingCakes"><a href="weddingcakes.html">Weddings</a></div>
                 <div class="celebrationCakes"><a href="celebrationcakes.html">Celebrations</a></div>
@@ -60,12 +60,91 @@
         </div>
 
         <div class="contentContainer">
-            <div class="contactContent">
+            <div class="content">
                 <div class="heading">
                     <h1>Contact</h1>
                 </div>
                 <hr class="headinglinebreak">
+
+                <div class="contactGrid">
+                    <div class="form">
+                        <section class="contactForm">
+                            <div class="formContainer">
+                                <form action="https://formsubmit.co/2052393518a89dc065cc1c4882e52cb9 " method="POST">
+                                    <!--Name input-->
+                                    <div class="form-group">
+                                        <label for="name"><span class="requiredStar">*</span>Name</label><br>
+                                        <input class="forminput" type="text" id="name" name="firstName"
+                                            placeholder="First" required>
+                                        <input class="forminput" type="text" id="name" name="lastName"
+                                            placeholder="Last" required>
+                                    </div>
+                                    <!--Email input-->
+                                    <div class="form-group">
+                                        <label for="email"><span class="requiredStar">*</span>E-mail</label><br>
+                                        <input class="forminput" type="email" id="email" onselectstart="return false"
+                                            oncut="return false" oncopy="return false" onpaste="return false"
+                                            ondrag="return false" ondrop="return false" name="email"
+                                            placeholder="example@example.com" placeholder="example@example.com"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="confirmEmail"><span class="requiredStar">*</span>Confirm
+                                            E-mail</label><br>
+                                        <input class="forminput" type="email" id="confirmEmail"
+                                            onselectstart="return false" oncut="return false" oncopy="return false"
+                                            onpaste="return false" ondrag="return false" ondrop="return false"
+                                            autocomplete="nope" name="email" placeholder="example@example.com" required>
+                                    </div>
+
+                                    <!--Number input-->
+                                    <div class="form-group">
+                                        <label for="mobileNumber"><span class="requiredStar">*</span>Mobile
+                                            number</label><br>
+                                        <input class="forminput" type="tel" id="mobileNumber" name="mobileNumber"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="landlineNumber">Landline number</label><br>
+                                        <input class="forminput" type="tel" id="landlineNumber" name="landlineNumber">
+                                    </div>
+
+                                    <!--Message input-->
+                                    <div class="form-group">
+                                        <label for="message"><span class="requiredStar">*</span>Message</label>
+                                        <textarea class="forminput" name="message" placeholder="Type message here..."
+                                            required rows="4" cols="70"></textarea>
+                                    </div>
+
+                                    <button onclick="return validateEmail();" type="submit"
+                                        name="Submit">Submit</button>
+                                </form>
+                            </div>
+
+                        </section>
+                    </div>
+                    <div class="address">
+                        <div class="contactTextBorder">
+                            <p class="contactText">
+                                The Cake Company Ballyfin,<br>
+                                Ballylusk,<br>
+                                Ballyfin,<br>
+                                Co. Laois.<br>
+                                R32 V3V6<br>
+                                <a class="smallPhone" href="tel:=057 875 55992">057 875 55992</a><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="map">
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjgbBNNVeeFqRJHN475QrQEKhNqoKPBQo&callback=initMap"></script>
+                    </div>
+                </div>
+                <div class="bottomSpace"></div>
             </div>
+
         </div>
 
     </body>
