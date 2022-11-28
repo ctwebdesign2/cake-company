@@ -120,6 +120,7 @@ html, body {
 
     .menuIcon {
         grid-area: menuIcon;
+        z-index: 3;
     }
 
     .hamburger {
@@ -167,6 +168,7 @@ html, body {
         -moz-box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.6);
         transition: .5s;
         padding: 150px 0px;
+        z-index: 1;
     }
 
     .sideNav div {
@@ -373,6 +375,51 @@ html, body {
 
     button[type="submit"]:hover {
         background-color: #D4D4D4;
+    }
+
+    /*Gallery pages*/
+    .galleryGrid {
+        --gap: 16px 0px;
+        --num-cols: 1;
+        --row-height: 200px;
+
+        box-sizing: border-box;
+        padding: var(--gap);
+
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+    }
+
+    .galleryGrid img, video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .image-grid-col-1 {
+        grid-column: span 1;
+    }
+
+    .image-grid-row-1 {
+        grid-row: span 1;
+    }
+
+    .image-grid-col-2 {
+        grid-column: span 2;
+    }
+
+    .image-grid-row-2 {
+        grid-row: span 2;
+    }
+
+    .image-grid-col-3 {
+        grid-column: span 3;
+    }
+
+    .image-grid-row-3 {
+        grid-row: span 3;
     }
 
 }
@@ -750,5 +797,49 @@ html, body {
 
     button[type="submit"]:hover {
         background-color: #D4D4D4;
+    }
+
+    /*Gallery pages*/
+    .galleryGrid {
+        --gap: 16px;
+        --num-cols: 4;
+        --row-height: 300px;
+
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+    }
+
+    .galleryGrid img, video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .image-grid-col-1 {
+        grid-column: span 1;
+    }
+
+    .image-grid-row-1 {
+        grid-row: span 1;
+    }
+
+    .image-grid-col-2 {
+        grid-column: span 2;
+    }
+
+    .image-grid-row-2 {
+        grid-row: span 2;
+    }
+
+    .image-grid-col-3 {
+        grid-column: span 3;
+    }
+
+    .image-grid-row-3 {
+        grid-row: span 3;
     }
 }
