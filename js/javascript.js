@@ -13,6 +13,11 @@ function hamburger() {
     });
 }
 
+/*More information popup*/
+function togglePopup(idname) {
+    document.getElementById(idname).classList.toggle("active");
+}
+
 /*Checks wheter or not the two emails entered are the same*/
 function validateEmail() {
     var email = document.getElementById("email");
