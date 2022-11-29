@@ -379,12 +379,11 @@ html, body {
 
     /*Gallery pages*/
     .galleryGrid {
-        --gap: 16px 0px;
-        --num-cols: 1;
-        --row-height: 200px;
+        --gap: 16px;
+        --num-cols: 4;
+        --row-height: 100px;
 
         box-sizing: border-box;
-        padding: var(--gap);
 
         display: grid;
         grid-template-columns: repeat(var(--num-cols), 1fr);
@@ -392,7 +391,7 @@ html, body {
         gap: var(--gap);
     }
 
-    .galleryGrid img, video {
+    .galleryGrid button img, video {
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -420,6 +419,71 @@ html, body {
 
     .image-grid-row-3 {
         grid-row: span 3;
+    }
+
+    /*Cake click pop-up*/
+    .popup {
+        display: contents;
+    }
+
+    .popup .overlay {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        display: none;
+    }
+
+    .popup .content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #fff;
+        z-index: 2;
+        text-align: left;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Calibri";
+        padding: 50rem 60rem;
+        line-height: 1.3;
+    }
+
+    .popup .popupheading {
+        font-weight: bold;
+        margin-bottom: 25rem;
+    }
+
+    .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background: #222;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .popup.active .overlay {
+        display: block;
+    }
+
+    .popup.active .content {
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .popupbutton {
+        cursor: pointer;
     }
 
 }
@@ -813,7 +877,7 @@ html, body {
         gap: var(--gap);
     }
 
-    .galleryGrid img, video {
+    .galleryGrid button img, video {
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -842,4 +906,71 @@ html, body {
     .image-grid-row-3 {
         grid-row: span 3;
     }
+
+    /*Cake click pop-up*/
+
+    .popup {
+        display: contents;
+    }
+
+    .popup .overlay {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        display: none;
+    }
+
+    .popup .content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #fff;
+        z-index: 2;
+        text-align: left;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: "Calibri";
+        padding: 50rem 60rem;
+        line-height: 1.3;
+    }
+
+    .popup .popupheading {
+        font-weight: bold;
+        margin-bottom: 25rem;
+    }
+
+    .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background: #222;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .popup.active .overlay {
+        display: block;
+    }
+
+    .popup.active .content {
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .popupbutton {
+        cursor: pointer;
+    }
+
 }
