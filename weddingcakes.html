@@ -26,9 +26,7 @@
 
     <body>
 
-        <div class="sideNavOverlay"></div>
         <div class="sideNav">
-
             <div class="logo"><a href="index.html"><img src="images/logoblack.png"
                         alt="The Cake Company Ballyfin Logo"></a>
             </div>
@@ -83,7 +81,38 @@
                         <div class="overlay" onclick="togglePopup('popup-1')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
-                            <img src="images/weddingcakes/May4th/-W- May4th -2.jpg" alt="">
+
+
+                            <!--<img class="portrait" src="images/weddingcakes/May4th/-W- May4th -2.jpg" alt="">-->
+
+                            <!-- Slideshow container -->
+
+                            <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                    <img class="portrait" src="images/weddingcakes/May4th/-W- May4th -2.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img class="portrait" src="images/weddingcakes/May4th/-W- May4th -1.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img class="landscape" src="images/weddingcakes/May4th/-W- May4th -3.jpg">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            </div>
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+                            <script src="js/slideshow.js"></script>
+
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -113,7 +142,7 @@
                         <div class="overlay" onclick="togglePopup('popup-2')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
-                            <img src="images/weddingcakes/Suitcase/-W- Suitcase -1.jpg" alt="">
+                            <img class="landscape" src="images/weddingcakes/Suitcase/-W- Suitcase -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Going Away Cases</h1>
                             </div>
@@ -134,7 +163,7 @@
                         <div class="overlay" onclick="togglePopup('popup-3')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
-                            <img src="images/weddingcakes/DíadeMuertoscake/-W- DayDead -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/DíadeMuertoscake/-W- DayDead -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
                             </div>
@@ -156,7 +185,8 @@
                         <div class="overlay" onclick="togglePopup('popup-4')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
-                            <img src="images/weddingcakes/AutumnColours/-W- AutumnColours -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/AutumnColours/-W- AutumnColours -1.jpg"
+                                alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
                             </div>
@@ -178,7 +208,8 @@
                         <div class="overlay" onclick="togglePopup('popup-5')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
-                            <img src="images/weddingcakes/ButlerHouseCake/-W- ButlerHouseCake -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/ButlerHouseCake/-W- ButlerHouseCake -1.jpg"
+                                alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
                             </div>
@@ -199,7 +230,7 @@
                         <div class="overlay" onclick="togglePopup('popup-6')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-6')">&times;</div>
-                            <img src="images/weddingcakes/BirdCage/-W- BirdCage -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/BirdCage/-W- BirdCage -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;“Be Mine Forever”</h1>
                             </div>
@@ -224,7 +255,7 @@
                         <div class="overlay" onclick="togglePopup('popup-7')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-7')">&times;</div>
-                            <img src="images/weddingcakes/Christmas/-W- Christmas -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/Christmas/-W- Christmas -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Christmas Wedding Cake</h1>
                             </div>
@@ -247,7 +278,7 @@
                         <div class="overlay" onclick="togglePopup('popup-8')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-8')">&times;</div>
-                            <img src="images/weddingcakes/UpDown/-W- UpDown -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/UpDown/-W- UpDown -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
                             </div>
@@ -272,7 +303,8 @@
                         <div class="overlay" onclick="togglePopup('popup-9')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-9')">&times;</div>
-                            <img src="images/weddingcakes/ColourCombination/-W- ColourCombination -1.jpg" alt="">
+                            <img class="portrait"
+                                src="images/weddingcakes/ColourCombination/-W- ColourCombination -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
                             </div>
@@ -297,7 +329,7 @@
                         <div class="overlay" onclick="togglePopup('popup-10')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-10')">&times;</div>
-                            <img src="images/weddingcakes/IndianCake/-W- IndianCake -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/IndianCake/-W- IndianCake -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
                             </div>
@@ -322,7 +354,7 @@
                         <div class="overlay" onclick="togglePopup('popup-11')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-11')">&times;</div>
-                            <img src="images/weddingcakes/May4th/-W- May4th -3.jpg" alt="">
+                            <img class="landscape" src="images/weddingcakes/May4th/-W- May4th -3.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -352,7 +384,7 @@
                         <div class="overlay" onclick="togglePopup('popup-12')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-12')">&times;</div>
-                            <img src="images/weddingcakes/JustMarried/-W- JustMarried -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/JustMarried/-W- JustMarried -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -382,7 +414,8 @@
                         <div class="overlay" onclick="togglePopup('popup-13')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-13')">&times;</div>
-                            <img src="images/weddingcakes/PaintStrokeCake/-W- PaintStrokeCake -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/PaintStrokeCake/-W- PaintStrokeCake -1.jpg"
+                                alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -412,7 +445,8 @@
                         <div class="overlay" onclick="togglePopup('popup-14')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-14')">&times;</div>
-                            <img src="images/weddingcakes/PearlAndJewel/-W- PearlAndJewel-1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/PearlAndJewel/-W- PearlAndJewel-1.jpg"
+                                alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -442,7 +476,7 @@
                         <div class="overlay" onclick="togglePopup('popup-15')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-15')">&times;</div>
-                            <img src="images/weddingcakes/PinkCake/-W- PinkCake -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/PinkCake/-W- PinkCake -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -472,7 +506,8 @@
                         <div class="overlay" onclick="togglePopup('popup-16')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-16')">&times;</div>
-                            <img src="images/weddingcakes/PrettyWhimsical/-W- PrettyWhimsical -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/PrettyWhimsical/-W- PrettyWhimsical -1.jpg"
+                                alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -502,7 +537,7 @@
                         <div class="overlay" onclick="togglePopup('popup-17')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-17')">&times;</div>
-                            <img src="images/weddingcakes/WillYou/-W- WillYou -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/WillYou/-W- WillYou -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -532,7 +567,7 @@
                         <div class="overlay" onclick="togglePopup('popup-18')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-18')">&times;</div>
-                            <img src="images/weddingcakes/WhiteWedding/-W- WhiteWedding -1.jpg" alt="">
+                            <img class="portrait" src="images/weddingcakes/WhiteWedding/-W- WhiteWedding -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
@@ -562,7 +597,8 @@
                         <div class="overlay" onclick="togglePopup('popup-19')"></div>
                         <div class="content">
                             <div class="close-btn" onclick="togglePopup('popup-19')">&times;</div>
-                            <img src="images/weddingcakes/SaltedCaramelCake/-W- SaltedCaramelCake -1.jpg" alt="">
+                            <img class="portrait"
+                                src="images/weddingcakes/SaltedCaramelCake/-W- SaltedCaramelCake -1.jpg" alt="">
                             <div class="popupheading">
                                 <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                             </div>
