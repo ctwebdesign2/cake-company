@@ -93,6 +93,17 @@ html, body {
     margin: 0;
 }
 
+/*Overall style of content pages*/
+
+.bottomSpace {
+    padding-top: 70px;
+}
+
+/*Current link*/
+.current {
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 767px) {
 
     /*Overall style of mobile navigation*/
@@ -120,7 +131,7 @@ html, body {
 
     .menuIcon {
         grid-area: menuIcon;
-        z-index: 3;
+        z-index: 1;
     }
 
     .hamburger {
@@ -196,12 +207,6 @@ html, body {
         margin: 0 auto;
     }
 
-    .contentContainer .heading {
-        margin-top: 25rem;
-        font-size: 25rem;
-        font-weight: bold;
-    }
-
     hr.headinglinebreak {
         border: 0;
         height: 1px;
@@ -214,13 +219,9 @@ html, body {
         margin: 0 0 35rem 0;
     }
 
-    .bottomSpace {
-        padding-top: 70px;
-    }
-
     /*Home page*/
     .hero {
-        margin: 0 auto;
+        margin: 45px auto;
         max-width: 90%;
         width: auto;
         max-height: 100%;
@@ -445,11 +446,13 @@ html, body {
         background: #fff;
         z-index: 2;
         text-align: left;
-        padding: 20px;
         box-sizing: border-box;
+        height: 95%;
+        width: 90%;
         font-family: "Calibri";
         padding: 50rem 60rem;
         line-height: 1.3;
+        overflow-y: scroll;
     }
 
     .popup .popupheading {
@@ -578,10 +581,6 @@ html, body {
     .links div a:hover::after {
         transform: scaleX(1);
         transform-origin: top;
-    }
-
-    .current {
-        font-weight: bold;
     }
 
     .home {
@@ -939,6 +938,20 @@ html, body {
         font-family: "Calibri";
         padding: 50rem 60rem;
         line-height: 1.3;
+        height: 90%;
+        width: 85%;
+        overflow-y: scroll;
+    }
+
+    .content img {
+        max-width: 60%;
+        width: 472.5px;
+        max-height: 90%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        margin-bottom: 25rem;
     }
 
     .popup .popupheading {
