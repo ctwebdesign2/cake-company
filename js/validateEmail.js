@@ -1,4 +1,3 @@
-
 /*Checks wheter or not the two emails entered are the same*/
 function validateEmail() {
     var email = document.getElementById("email");
