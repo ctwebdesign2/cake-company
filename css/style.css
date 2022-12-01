@@ -542,7 +542,7 @@ html, body {
             "weddingCakes weddingCakes weddingCakes"
             "celebrationCakes celebrationCakes celebrationCakes"
             "contact contact contact"
-            ". . ."
+            "weddingResources weddingResources weddingResources"
             ". . .";
         grid-area: links;
     }
@@ -619,17 +619,19 @@ html, body {
         justify-content: center;
     }
 
+    .weddingResources {
+        grid-area: weddingResources;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .social {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            ". instagram . facebook ."
-            ". . . . ."
-            ". . . . .";
         grid-area: social;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 27.5px;
     }
 
     .instagram {
@@ -711,25 +713,25 @@ html, body {
 
     .colouredvbar {
         color: #FFA500;
+        font-weight: bold;
     }
 
     .ballyfinItalic {
         font-style: italic;
-        color: #949494;
+        color: #3b3b3b;
     }
 
     .smallSpace {
-        font-size: 10rem;
+        font-size: 5rem;
     }
 
     .content #aboutImg {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-left: auto;
         grid-area: hero;
-        max-width: 60%;
-        width: auto;
+        max-width: 50%;
+        width: 472.5px;
         max-height: 90%;
         height: auto;
         box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
