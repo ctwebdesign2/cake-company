@@ -976,7 +976,7 @@ html, body {
         cursor: pointer;
     }
 
-    .content img {
+    .mySlides img {
         margin: auto;
         display: block;
         box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);

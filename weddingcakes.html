@@ -22,611 +22,607 @@
     <script src="js/sidenav.js"></script>
 </head>
 
+
 <body>
 
-    <body>
-
-        <div class="sideNav">
-            <div class="logo"><a href="index.html"><img src="images/logoblack.png"
-                        alt="The Cake Company Ballyfin Logo"></a>
+    <div class="sideNav">
+        <div class="logo"><a href="index.html"><img src="images/logoblack.png" alt="The Cake Company Ballyfin Logo"></a>
+        </div>
+        <nav aria-label="links" class="links">
+            <div class="home"><a href="index.html">Home</a></div>
+            <div class="about"><a href="about.html">About</a></div>
+            <div class="weddingCakes"><a class="current" href="weddingcakes.html">Wedding Cakes</a></div>
+            <div class="celebrationCakes"><a href="celebrationcakes.html">Celebration Cakes</a>
             </div>
-            <nav aria-label="links" class="links">
-                <div class="home"><a href="index.html">Home</a></div>
-                <div class="about"><a href="about.html">About</a></div>
-                <div class="weddingCakes"><a class="current" href="weddingcakes.html">Wedding Cakes</a></div>
-                <div class="celebrationCakes"><a href="celebrationcakes.html">Celebration Cakes</a>
-                </div>
-                <div class="contact"><a href="contact.html">Contact</a></div>
-                <div class="weddingResources"><a href="weddingresources.html">Wedding Resources</a>
-                </div>
-            </nav>
-            <div class="social">
-                <div class="instagram"><a href="https://www.instagram.com/thecakecompanyballyfin/" target="_blank"><img
-                            src="images/socialmedia/instagram_icon.svg" alt="Instagram"></a></div>
-                <div class="facebook"><a href="https://www.facebook.com/TheCakeCompanyBallyfin" target="_blank"><img
-                            src="images/socialmedia/facebook_icon.svg" alt="Facebook"></a></div>
+            <div class="contact"><a href="contact.html">Contact</a></div>
+            <div class="weddingResources"><a href="weddingresources.html">Wedding Resources</a>
             </div>
-
+        </nav>
+        <div class="social">
+            <div class="instagram"><a href="https://www.instagram.com/thecakecompanyballyfin/" target="_blank"><img
+                        src="images/socialmedia/instagram_icon.svg" alt="Instagram"></a></div>
+            <div class="facebook"><a href="https://www.facebook.com/TheCakeCompanyBallyfin" target="_blank"><img
+                        src="images/socialmedia/facebook_icon.svg" alt="Facebook"></a></div>
         </div>
 
-        <div class="mobileNavContainer">
-            <div class="topNav">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logoblack.png" alt="The Cake Company Ballyfin Logo"></a>
-                </div>
-                <div class="menuIcon">
-                    <button class="hamburger">
-                        <div class="bar">
-                        </div>
-                    </button>
-                </div>
+    </div>
+
+    <div class="mobileNavContainer">
+        <div class="topNav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logoblack.png" alt="The Cake Company Ballyfin Logo"></a>
+            </div>
+            <div class="menuIcon">
+                <button class="hamburger">
+                    <div class="bar">
+                    </div>
+                </button>
             </div>
         </div>
+    </div>
 
-        <div class="contentContainer">
-            <div class="weddingCakesContent">
-                <div class="heading">
-                    <h1>Wedding Cakes</h1>
-                </div>
-                <hr class="headinglinebreak">
+    <div class="contentContainer">
+        <div class="weddingCakesContent">
+            <div class="heading">
+                <h1>Wedding Cakes</h1>
+            </div>
+            <hr class="headinglinebreak">
 
-                <div class="galleryGrid">
+            <div class="galleryGrid">
 
-                    <script src="js/moreInformation.js"></script>
-                    <script src="js/slideshow.js"></script>
+                <script src="js/slideshow.js"></script>
+                <script src="js/moreInformation.js"></script>
 
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-1')">
-                        <img src="images/weddingcakes/May4th/-W- May4th -2.jpg" alt="">
-                    </button>
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-1')">
+                    <img src="images/weddingcakes/May4th/-W- May4th -2.jpg" alt="">
+                </button>
 
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-1">
-                        <div class="overlay" onclick="togglePopup('popup-1')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
-                            <!-- Slideshow container -->
-                            <div class="slideshow-container">
+                <!--More information... Popup-->
+                <div class="popup" id="popup-1">
+                    <div class="overlay" onclick="togglePopup('popup-1')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
 
-                                <div class="mySlides fade">
-                                    <img class="portrait" src="images/weddingcakes/May4th/-W- May4th -2.jpg">
-                                </div>
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
 
-                                <div class="mySlides fade">
-                                    <img class="portrait" src="images/weddingcakes/May4th/-W- May4th -1.jpg">
-                                </div>
-
-                                <div class="mySlides fade">
-                                    <img class="landscape" src="images/weddingcakes/May4th/-W- May4th -3.jpg">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                                <a class="next" onclick="plusSlides(1)">❯</a>
-
+                            <div class="mySlides fade">
+                                <img class="portrait" src="images/weddingcakes/May4th/-W- May4th -2.jpg" alt="">
                             </div>
 
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
+                            <div class="mySlides fade">
+                                <img class="portrait" src="images/weddingcakes/May4th/-W- May4th -1.jpg" alt="">
                             </div>
 
-
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                            <div class="mySlides fade">
+                                <img class="landscape" src="images/weddingcakes/May4th/-W- May4th -3.jpg" alt="">
                             </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
                         </div>
-                    </div>
 
-                    <button class="popupbutton image-grid-row-1 image-grid-col-2" onclick="togglePopup('popup-2')">
-                        <img src="images/weddingcakes/Suitcase/-W- Suitcase -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-2">
-                        <div class="overlay" onclick="togglePopup('popup-2')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
-                            <img class="landscape" src="images/weddingcakes/Suitcase/-W- Suitcase -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Going Away Cases</h1>
-                            </div>
-                            <p>Suitcases packed and ready for the honeymoon and a new life together ...<br>
-                                <br>
-                                Lemon Poppy Seed decorated with fondant and a Light Fruit Cake covered with marzipan,
-                                also decorated with fondant. Fondant flowers complement the bride's bouquet.
-                            </p>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
-                    </div>
 
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-3')">
-                        <img src="images/weddingcakes/DíadeMuertoscake/-W- DayDead -1.jpg" alt="">
-                    </button>
 
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-3">
-                        <div class="overlay" onclick="togglePopup('popup-3')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/DíadeMuertoscake/-W- DayDead -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
-                            </div>
-                            <p>A five tier wedding cake, elaborately decorated with hand-made fondant flowers and skulls
-                                for a wedding at the spectacularly located Harvey’s Point, Donegal.<br>
-                                <br>
-                                There are two sides to every story … this cake is no different … it catered for everyone
-                                …
-                            </p>
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
                         </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
                     </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-4')">
-                        <img src="images/weddingcakes/AutumnColours/-W- AutumnColours -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-4">
-                        <div class="overlay" onclick="togglePopup('popup-4')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/AutumnColours/-W- AutumnColours -1.jpg"
-                                alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
-                            </div>
-                            <p>A five tier wedding cake, elaborately decorated with hand-made fondant flowers and skulls
-                                for a wedding at the spectacularly located Harvey’s Point, Donegal.<br>
-                                <br>
-                                There are two sides to every story … this cake is no different … it catered for everyone
-                                …
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-5')">
-                        <img src="images/weddingcakes/ButlerHouseCake/-W- ButlerHouseCake -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-5">
-                        <div class="overlay" onclick="togglePopup('popup-5')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/ButlerHouseCake/-W- ButlerHouseCake -1.jpg"
-                                alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
-                            </div>
-                            <p>A five tier wedding cake, elaborately decorated with hand-made fondant flowers and skulls
-                                for a wedding at the spectacularly located Harvey’s Point, Donegal.<br>
-                                <br>
-                                There are two sides to every story … this cake is no different … it catered for everyone
-                                …
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-6')">
-                        <img src="images/weddingcakes/BirdCage/-W- BirdCage -1.jpg" alt="">
-                    </button>
-
-                    <div class="popup" id="popup-6">
-                        <div class="overlay" onclick="togglePopup('popup-6')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-6')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/BirdCage/-W- BirdCage -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;“Be Mine Forever”</h1>
-                            </div>
-                            <p>“Will you be mine forever …?” Love birds gazing into each other’s eyes on a tall,
-                                elegant, four-tier, wedding cake in the ballroom of Carton House Hotel.
-                                <br><br>
-                                Chocolate with Vanilla butter-cream filling, Lemon Poppy-seed with lemon butter-cream
-                                and lemon curd filling and Coconut and Lime with lime butter-cream filling. <br>
-                                <br>
-                                A rich fruit cake baked by a relative of the bride was decorated
-                                with hand-cut fondant lace to match the beautiful bridal gown.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-7')">
-                        <img src="images/weddingcakes/Christmas/-W- Christmas -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-7">
-                        <div class="overlay" onclick="togglePopup('popup-7')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-7')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/Christmas/-W- Christmas -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Christmas Wedding Cake</h1>
-                            </div>
-                            <p>A wedding cake for a wonderful couple with whom I was never able to meet in person to
-                                discuss their dream cake. They both loved Christmas and said they would like holly
-                                leaves to be incorporated into the design.<br>
-                                <br>
-                                What began as a white cake with sugar flowers evolved into a rich green cake showing off
-                                Holly leaves and Hellebore, the Christmas Rose.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-3 image-grid-col-2" onclick="togglePopup('popup-8')">
-                        <img src="images/weddingcakes/UpDown/-W- UpDown -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-8">
-                        <div class="overlay" onclick="togglePopup('popup-8')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-8')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/UpDown/-W- UpDown -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
-                            </div>
-                            <p>A suspended, up-side-down, three-tier wedding cake accompanied by a monogrammed Red
-                                Velvet Cake to cu for the traditional 'cutting' photograph.<br>
-                                <br>
-                                Lemon PoppySeed with Lemon Curd and Lemon Buttercream filling ... Rich Belgian Chocolate
-                                with Vanilla Buttercream.<br>
-                                <br>
-                                Hand Crafted fondant flowers to match the bridal bouquet in colours to match the
-                                bridesmaid's dresses.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-9')">
-                        <img src="images/weddingcakes/ColourCombination/-W- ColourCombination -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-9">
-                        <div class="overlay" onclick="togglePopup('popup-9')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-9')">&times;</div>
-                            <img class="portrait"
-                                src="images/weddingcakes/ColourCombination/-W- ColourCombination -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
-                            </div>
-                            <p>A suspended, up-side-down, three-tier wedding cake accompanied by a monogrammed Red
-                                Velvet Cake to cu for the traditional 'cutting' photograph.<br>
-                                <br>
-                                Lemon PoppySeed with Lemon Curd and Lemon Buttercream filling ... Rich Belgian Chocolate
-                                with Vanilla Buttercream.<br>
-                                <br>
-                                Hand Crafted fondant flowers to match the bridal bouquet in colours to match the
-                                bridesmaid's dresses.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-10')">
-                        <img src="images/weddingcakes/IndianCake/-W- IndianCake -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-10">
-                        <div class="overlay" onclick="togglePopup('popup-10')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-10')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/IndianCake/-W- IndianCake -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
-                            </div>
-                            <p>A suspended, up-side-down, three-tier wedding cake accompanied by a monogrammed Red
-                                Velvet Cake to cu for the traditional 'cutting' photograph.<br>
-                                <br>
-                                Lemon PoppySeed with Lemon Curd and Lemon Buttercream filling ... Rich Belgian Chocolate
-                                with Vanilla Buttercream.<br>
-                                <br>
-                                Hand Crafted fondant flowers to match the bridal bouquet in colours to match the
-                                bridesmaid's dresses.
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-2" onclick="togglePopup('popup-11')">
-                        <img src="images/weddingcakes/May4th/-W- May4th -3.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-11">
-                        <div class="overlay" onclick="togglePopup('popup-11')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-11')">&times;</div>
-                            <img class="landscape" src="images/weddingcakes/May4th/-W- May4th -3.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-3 image-grid-col-2" onclick="togglePopup('popup-12')">
-                        <img src="images/weddingcakes/JustMarried/-W- JustMarried -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-12">
-                        <div class="overlay" onclick="togglePopup('popup-12')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-12')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/JustMarried/-W- JustMarried -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-13')">
-                        <img src="images/weddingcakes/PaintStrokeCake/-W- PaintStrokeCake -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-13">
-                        <div class="overlay" onclick="togglePopup('popup-13')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-13')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/PaintStrokeCake/-W- PaintStrokeCake -1.jpg"
-                                alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-14')">
-                        <img src="images/weddingcakes/PearlAndJewel/-W- PearlAndJewel-1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-14">
-                        <div class="overlay" onclick="togglePopup('popup-14')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-14')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/PearlAndJewel/-W- PearlAndJewel-1.jpg"
-                                alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-15')">
-                        <img src="images/weddingcakes/PinkCake/-W- PinkCake -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-15">
-                        <div class="overlay" onclick="togglePopup('popup-15')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-15')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/PinkCake/-W- PinkCake -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-16')">
-                        <img src="images/weddingcakes/PrettyWhimsical/-W- PrettyWhimsical -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-16">
-                        <div class="overlay" onclick="togglePopup('popup-16')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-16')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/PrettyWhimsical/-W- PrettyWhimsical -1.jpg"
-                                alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-17')">
-                        <img src="images/weddingcakes/WillYou/-W- WillYou -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-17">
-                        <div class="overlay" onclick="togglePopup('popup-17')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-17')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/WillYou/-W- WillYou -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-18')">
-                        <img src="images/weddingcakes/WhiteWedding/-W- WhiteWedding -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-18">
-                        <div class="overlay" onclick="togglePopup('popup-18')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-18')">&times;</div>
-                            <img class="portrait" src="images/weddingcakes/WhiteWedding/-W- WhiteWedding -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
-                    <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-19')">
-                        <img src="images/weddingcakes/SaltedCaramelCake/-W- SaltedCaramelCake -1.jpg" alt="">
-                    </button>
-
-                    <!--More information... Popup-->
-                    <div class="popup" id="popup-19">
-                        <div class="overlay" onclick="togglePopup('popup-19')"></div>
-                        <div class="content">
-                            <div class="close-btn" onclick="togglePopup('popup-19')">&times;</div>
-                            <img class="portrait"
-                                src="images/weddingcakes/SaltedCaramelCake/-W- SaltedCaramelCake -1.jpg" alt="">
-                            <div class="popupheading">
-                                <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
-                            </div>
-                            <p>
-                                A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
-                                Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
-                                bride's bouquet.<br>
-                                <br>
-                                Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
-                                <br>
-                                Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
-                                recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
-                                ... the cake was a surprise from the bride to the
-                                groom...<br>
-                                <br>
-                                Madeira with buttercream and raspberry preserve ...
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
 
-                <div class="bottomSpace"></div>
+                <button class="popupbutton image-grid-row-1 image-grid-col-2" onclick="togglePopup('popup-2')">
+                    <img src="images/weddingcakes/Suitcase/-W- Suitcase -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-2">
+                    <div class="overlay" onclick="togglePopup('popup-2')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+                        <img class="landscape" src="images/weddingcakes/Suitcase/-W- Suitcase -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Going Away Cases</h1>
+                        </div>
+                        <p>Suitcases packed and ready for the honeymoon and a new life together ...<br>
+                            <br>
+                            Lemon Poppy Seed decorated with fondant and a Light Fruit Cake covered with marzipan,
+                            also decorated with fondant. Fondant flowers complement the bride's bouquet.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-3')">
+                    <img src="images/weddingcakes/DíadeMuertoscake/-W- DayDead -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-3">
+                    <div class="overlay" onclick="togglePopup('popup-3')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/DíadeMuertoscake/-W- DayDead -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
+                        </div>
+                        <p>A five tier wedding cake, elaborately decorated with hand-made fondant flowers and skulls
+                            for a wedding at the spectacularly located Harvey’s Point, Donegal.<br>
+                            <br>
+                            There are two sides to every story … this cake is no different … it catered for everyone
+                            …
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-4')">
+                    <img src="images/weddingcakes/AutumnColours/-W- AutumnColours -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-4">
+                    <div class="overlay" onclick="togglePopup('popup-4')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/AutumnColours/-W- AutumnColours -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
+                        </div>
+                        <p>A five tier wedding cake, elaborately decorated with hand-made fondant flowers and skulls
+                            for a wedding at the spectacularly located Harvey’s Point, Donegal.<br>
+                            <br>
+                            There are two sides to every story … this cake is no different … it catered for everyone
+                            …
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-5')">
+                    <img src="images/weddingcakes/ButlerHouseCake/-W- ButlerHouseCake -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-5">
+                    <div class="overlay" onclick="togglePopup('popup-5')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/ButlerHouseCake/-W- ButlerHouseCake -1.jpg"
+                            alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Till Death Do Us Part</h1>
+                        </div>
+                        <p>A five tier wedding cake, elaborately decorated with hand-made fondant flowers and skulls
+                            for a wedding at the spectacularly located Harvey’s Point, Donegal.<br>
+                            <br>
+                            There are two sides to every story … this cake is no different … it catered for everyone
+                            …
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-6')">
+                    <img src="images/weddingcakes/BirdCage/-W- BirdCage -1.jpg" alt="">
+                </button>
+
+                <div class="popup" id="popup-6">
+                    <div class="overlay" onclick="togglePopup('popup-6')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-6')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/BirdCage/-W- BirdCage -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;“Be Mine Forever”</h1>
+                        </div>
+                        <p>“Will you be mine forever …?” Love birds gazing into each other’s eyes on a tall,
+                            elegant, four-tier, wedding cake in the ballroom of Carton House Hotel.
+                            <br><br>
+                            Chocolate with Vanilla butter-cream filling, Lemon Poppy-seed with lemon butter-cream
+                            and lemon curd filling and Coconut and Lime with lime butter-cream filling. <br>
+                            <br>
+                            A rich fruit cake baked by a relative of the bride was decorated
+                            with hand-cut fondant lace to match the beautiful bridal gown.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-7')">
+                    <img src="images/weddingcakes/Christmas/-W- Christmas -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-7">
+                    <div class="overlay" onclick="togglePopup('popup-7')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-7')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/Christmas/-W- Christmas -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Christmas Wedding Cake</h1>
+                        </div>
+                        <p>A wedding cake for a wonderful couple with whom I was never able to meet in person to
+                            discuss their dream cake. They both loved Christmas and said they would like holly
+                            leaves to be incorporated into the design.<br>
+                            <br>
+                            What began as a white cake with sugar flowers evolved into a rich green cake showing off
+                            Holly leaves and Hellebore, the Christmas Rose.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-3 image-grid-col-2" onclick="togglePopup('popup-8')">
+                    <img src="images/weddingcakes/UpDown/-W- UpDown -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-8">
+                    <div class="overlay" onclick="togglePopup('popup-8')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-8')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/UpDown/-W- UpDown -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
+                        </div>
+                        <p>A suspended, up-side-down, three-tier wedding cake accompanied by a monogrammed Red
+                            Velvet Cake to cu for the traditional 'cutting' photograph.<br>
+                            <br>
+                            Lemon PoppySeed with Lemon Curd and Lemon Buttercream filling ... Rich Belgian Chocolate
+                            with Vanilla Buttercream.<br>
+                            <br>
+                            Hand Crafted fondant flowers to match the bridal bouquet in colours to match the
+                            bridesmaid's dresses.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-9')">
+                    <img src="images/weddingcakes/ColourCombination/-W- ColourCombination -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-9">
+                    <div class="overlay" onclick="togglePopup('popup-9')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-9')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/ColourCombination/-W- ColourCombination -1.jpg"
+                            alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
+                        </div>
+                        <p>A suspended, up-side-down, three-tier wedding cake accompanied by a monogrammed Red
+                            Velvet Cake to cu for the traditional 'cutting' photograph.<br>
+                            <br>
+                            Lemon PoppySeed with Lemon Curd and Lemon Buttercream filling ... Rich Belgian Chocolate
+                            with Vanilla Buttercream.<br>
+                            <br>
+                            Hand Crafted fondant flowers to match the bridal bouquet in colours to match the
+                            bridesmaid's dresses.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-10')">
+                    <img src="images/weddingcakes/IndianCake/-W- IndianCake -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-10">
+                    <div class="overlay" onclick="togglePopup('popup-10')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-10')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/IndianCake/-W- IndianCake -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;Upside Down Cake</h1>
+                        </div>
+                        <p>A suspended, up-side-down, three-tier wedding cake accompanied by a monogrammed Red
+                            Velvet Cake to cu for the traditional 'cutting' photograph.<br>
+                            <br>
+                            Lemon PoppySeed with Lemon Curd and Lemon Buttercream filling ... Rich Belgian Chocolate
+                            with Vanilla Buttercream.<br>
+                            <br>
+                            Hand Crafted fondant flowers to match the bridal bouquet in colours to match the
+                            bridesmaid's dresses.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-2" onclick="togglePopup('popup-11')">
+                    <img src="images/weddingcakes/May4th/-W- May4th -3.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-11">
+                    <div class="overlay" onclick="togglePopup('popup-11')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-11')">&times;</div>
+                        <img class="landscape" src="images/weddingcakes/May4th/-W- May4th -3.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-3 image-grid-col-2" onclick="togglePopup('popup-12')">
+                    <img src="images/weddingcakes/JustMarried/-W- JustMarried -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-12">
+                    <div class="overlay" onclick="togglePopup('popup-12')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-12')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/JustMarried/-W- JustMarried -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-13')">
+                    <img src="images/weddingcakes/PaintStrokeCake/-W- PaintStrokeCake -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-13">
+                    <div class="overlay" onclick="togglePopup('popup-13')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-13')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/PaintStrokeCake/-W- PaintStrokeCake -1.jpg"
+                            alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-14')">
+                    <img src="images/weddingcakes/PearlAndJewel/-W- PearlAndJewel-1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-14">
+                    <div class="overlay" onclick="togglePopup('popup-14')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-14')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/PearlAndJewel/-W- PearlAndJewel-1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-15')">
+                    <img src="images/weddingcakes/PinkCake/-W- PinkCake -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-15">
+                    <div class="overlay" onclick="togglePopup('popup-15')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-15')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/PinkCake/-W- PinkCake -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-16')">
+                    <img src="images/weddingcakes/PrettyWhimsical/-W- PrettyWhimsical -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-16">
+                    <div class="overlay" onclick="togglePopup('popup-16')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-16')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/PrettyWhimsical/-W- PrettyWhimsical -1.jpg"
+                            alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-17')">
+                    <img src="images/weddingcakes/WillYou/-W- WillYou -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-17">
+                    <div class="overlay" onclick="togglePopup('popup-17')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-17')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/WillYou/-W- WillYou -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-18')">
+                    <img src="images/weddingcakes/WhiteWedding/-W- WhiteWedding -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-18">
+                    <div class="overlay" onclick="togglePopup('popup-18')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-18')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/WhiteWedding/-W- WhiteWedding -1.jpg" alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
+                <button class="popupbutton image-grid-row-2 image-grid-col-1" onclick="togglePopup('popup-19')">
+                    <img src="images/weddingcakes/SaltedCaramelCake/-W- SaltedCaramelCake -1.jpg" alt="">
+                </button>
+
+                <!--More information... Popup-->
+                <div class="popup" id="popup-19">
+                    <div class="overlay" onclick="togglePopup('popup-19')"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup('popup-19')">&times;</div>
+                        <img class="portrait" src="images/weddingcakes/SaltedCaramelCake/-W- SaltedCaramelCake -1.jpg"
+                            alt="">
+                        <div class="popupheading">
+                            <h1>WEDDING CAKE&nbsp;&nbsp;|&nbsp;&nbsp;May The Fourth Be With You</h1>
+                        </div>
+                        <p>
+                            A classic, elegant, semi-nude wedding cake finished with handmade sugar-flowers ...
+                            Sweet-Pea, Scabiosa, Lilly Of The Valley, Freesia & Eucalyptus leaves ... matching the
+                            bride's bouquet.<br>
+                            <br>
+                            Lemon Poppy Seed ... Salted Caramel ... Rich Chocolate Biscuit Cake.<br>
+                            <br>
+                            Accompanied by a Groom's Cake reflecting his interest in Star Wars, Harry Potter, and
+                            recorded music ... on his stags' night, he recorded two tracks on vinyl for his bride
+                            ... the cake was a surprise from the bride to the
+                            groom...<br>
+                            <br>
+                            Madeira with buttercream and raspberry preserve ...
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
+            <div class="bottomSpace"></div>
         </div>
 
-    </body>
-
+    </div>
 
 </body>
+
+
 
 </html>
