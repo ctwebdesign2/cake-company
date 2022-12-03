@@ -207,6 +207,12 @@ html, body {
         margin: 0 auto;
     }
 
+    .contentContainer .heading {
+        margin-top: 25rem;
+        font-size: 25rem;
+        font-weight: bold;
+    }
+
     hr.headinglinebreak {
         border: 0;
         height: 1px;
@@ -352,7 +358,7 @@ html, body {
         font-family: "Calibri";
     }
 
-    .form-group textarea {
+    .form-group>textarea {
         resize: vertical;
     }
 
@@ -487,6 +493,98 @@ html, body {
 
     .popupbutton {
         cursor: pointer;
+    }
+
+    .slides img, video {
+        margin: auto;
+        display: block;
+        box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
+        margin-bottom: 25rem;
+    }
+
+    .content .portrait {
+        max-width: 60%;
+        width: 472.5px;
+        max-height: 90%;
+        height: auto;
+    }
+
+    .content .landscape {
+        max-width: 100%;
+        width: 800px;
+        max-height: 100%;
+        height: auto;
+    }
+
+    /*Pop-up gallery*/
+    .slideshow-container {
+        max-width: 900px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 15px;
+        margin-top: -22px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .dots {
+        text-align: center
+    }
+
+    .activeDot, .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .prev, .next, .text {
+            font-size: 11px
+        }
     }
 
 }
@@ -976,7 +1074,7 @@ html, body {
         cursor: pointer;
     }
 
-    .mySlides img {
+    .slides img, video {
         margin: auto;
         display: block;
         box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
@@ -1037,7 +1135,11 @@ html, body {
         transition: background-color 0.6s ease;
     }
 
-    .active, .dot:hover {
+    .dots {
+        text-align: center
+    }
+
+    .activeDot, .dot:hover {
         background-color: #717171;
     }
 
