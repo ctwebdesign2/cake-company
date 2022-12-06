@@ -20,12 +20,15 @@
 }
 
 /* Reapply the pointer cursor for anchor tags */
-a, button {
+a,
+button {
     cursor: revert;
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+ol,
+ul,
+menu {
     list-style: none;
 }
 
@@ -40,7 +43,8 @@ table {
 }
 
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
+input,
+textarea {
     -webkit-user-select: auto;
 }
 
@@ -88,7 +92,8 @@ html {
     font-size: 1px;
 }
 
-html, body {
+html,
+body {
     height: 100vh;
     margin: 0;
 }
@@ -146,7 +151,9 @@ html, body {
         border: none;
     }
 
-    .hamburger .bar, .hamburger:after, .hamburger:before {
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
         content: '';
         display: block;
         width: 100%;
@@ -182,7 +189,7 @@ html, body {
         z-index: 1;
     }
 
-    .sideNav div {
+    .sideNav nav>div {
         padding: 20px 30px;
         font-size: 25rem;
         color: #000;
@@ -194,7 +201,19 @@ html, body {
         right: 0;
     }
 
-    .sideNav .logo, .social {
+    .sideNav .social {
+        margin-top: 70px;
+        margin-left: 90px;
+        width: 50%;
+        display: flex;
+    }
+
+    .sideNav .social>div {
+        margin: auto;
+        width: 40rem;
+    }
+
+    .sideNav .logo {
         display: none;
     }
 
@@ -334,11 +353,13 @@ html, body {
         max-width: 30%;
     }
 
-    .form-group #email, #confirmEmail {
+    .form-group #email,
+    #confirmEmail {
         max-width: 50%;
     }
 
-    .form-group #mobileNumber, #landlineNumber {
+    .form-group #mobileNumber,
+    #landlineNumber {
         max-width: 30%;
     }
 
@@ -348,7 +369,8 @@ html, body {
         font-size: 20rem;
     }
 
-    .form-group input, .form-group textarea {
+    .form-group input,
+    .form-group textarea {
         width: 100%;
         padding: 5rem;
         font-size: 18rem;
@@ -398,7 +420,8 @@ html, body {
         gap: var(--gap);
     }
 
-    .galleryGrid button img, video {
+    .galleryGrid button img,
+    video {
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -495,7 +518,8 @@ html, body {
         cursor: pointer;
     }
 
-    .slides img, video {
+    .slides img,
+    video {
         margin: auto;
         display: block;
         box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
@@ -526,7 +550,8 @@ html, body {
     }
 
     /* Next & previous buttons */
-    .prev, .next {
+    .prev,
+    .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -560,7 +585,8 @@ html, body {
         text-align: center
     }
 
-    .activeDot, .dot:hover {
+    .activeDot,
+    .dot:hover {
         background-color: #717171;
     }
 
@@ -582,11 +608,67 @@ html, body {
 
     /* On smaller screens, decrease text size */
     @media only screen and (max-width: 300px) {
-        .prev, .next, .text {
+
+        .prev,
+        .next,
+        .text {
             font-size: 11px
         }
     }
 
+    /*Wedding resources page*/
+    .weddingResourcesGrid {
+        --gap: 50px;
+        --num-cols: 1;
+        --row-height: 600px;
+
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+    }
+
+    .squareBorder {
+        box-shadow: 5rem 5rem 20rem 5rem rgba(0, 0, 0, 0.3);
+        border-radius: 10rem 10rem 10rem 10rem;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 70%;
+    }
+
+    .weddingResourcesGrid button {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10rem 10rem 0rem 0rem;
+    }
+
+    .weddingResourcesGrid button img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .textContainer {
+        margin: auto;
+        padding: 15rem 0;
+        width: 90%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .weddingResourcesHeading {
+        font-size: 25rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -775,10 +857,6 @@ html, body {
         margin: 0 0 35rem 0;
     }
 
-    .bottomSpace {
-        padding-top: 70px;
-    }
-
     /*Home page*/
     .hero {
         margin-left: 300px;
@@ -912,11 +990,13 @@ html, body {
         max-width: 30%;
     }
 
-    .form-group #email, #confirmEmail {
+    .form-group #email,
+    #confirmEmail {
         max-width: 50%;
     }
 
-    .form-group #mobileNumber, #landlineNumber {
+    .form-group #mobileNumber,
+    #landlineNumber {
         max-width: 30%;
     }
 
@@ -926,7 +1006,8 @@ html, body {
         font-size: 20rem;
     }
 
-    .form-group input, .form-group textarea {
+    .form-group input,
+    .form-group textarea {
         width: 100%;
         padding: 5rem;
         font-size: 18rem;
@@ -976,7 +1057,8 @@ html, body {
         gap: var(--gap);
     }
 
-    .galleryGrid button img, video {
+    .galleryGrid button img,
+    video {
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -1074,7 +1156,8 @@ html, body {
         cursor: pointer;
     }
 
-    .slides img, video {
+    .slides img,
+    video {
         margin: auto;
         display: block;
         box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
@@ -1105,7 +1188,8 @@ html, body {
     }
 
     /* Next & previous buttons */
-    .prev, .next {
+    .prev,
+    .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -1139,7 +1223,8 @@ html, body {
         text-align: center
     }
 
-    .activeDot, .dot:hover {
+    .activeDot,
+    .dot:hover {
         background-color: #717171;
     }
 
@@ -1161,8 +1246,74 @@ html, body {
 
     /* On smaller screens, decrease text size */
     @media only screen and (max-width: 300px) {
-        .prev, .next, .text {
+
+        .prev,
+        .next,
+        .text {
             font-size: 11px
         }
     }
+
+    /*Wedding resources page*/
+    .weddingResourcesGrid {
+        --gap: 50px;
+        --num-cols: 2;
+        --row-height: 500px;
+
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+    }
+
+    .squareBorder {
+        box-shadow: 5rem 5rem 20rem 5rem rgba(0, 0, 0, 0.3);
+        border-radius: 10rem 10rem 10rem 10rem;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 70%;
+    }
+
+    .weddingResourcesGrid button {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10rem 10rem 0rem 0rem;
+    }
+
+    .weddingResourcesGrid button img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .textContainer {
+        margin: auto;
+        padding: 15rem 0;
+        width: 90%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .weddingResourcesHeading {
+        font-size: 25rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 500px) {
+
+        .weddingResourcesHeading {
+            font-size: 11px
+        }
+    }
+
 }
