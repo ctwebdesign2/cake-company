@@ -102,6 +102,7 @@ body {
 
 .bottomSpace {
     padding-top: 70px;
+    background-image: url('images\ffffff.png');
 }
 
 /*Current link*/
@@ -674,6 +675,34 @@ body {
         font-weight: bold;
         cursor: pointer;
     }
+
+    .tables {
+        margin: auto;
+        width: 100%;
+    }
+
+    .demTable {
+        margin: auto;
+        border: 1px none #ffffff;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+    .demTable th {
+        text-align: center;
+        border: 1px none #ffffff;
+        padding: 5px;
+        background: #ffffff;
+        color: #313030;
+    }
+
+    .demTable td {
+        text-align: center;
+        border: 1px none #ffffff;
+        padding: 5px;
+        background: #ffffff;
+        color: #313030;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -918,19 +947,6 @@ body {
         -webkit-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
         -moz-box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.6);
     }
-
-    /*Contact page*/
-    /*.contactGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 0.15fr 1fr 1fr;
-        grid-template-rows: 0.5fr 0.10fr 0.80fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "form form . address address"
-            "form form . . ."
-            "form form . map map";
-    }*/
 
     /*Contact page*/
     .contactGrid {
@@ -1240,7 +1256,8 @@ body {
     }
 
     .dots {
-        text-align: center
+        text-align: center;
+        margin-bottom: 15rem;
     }
 
     .activeDot,
@@ -1317,6 +1334,33 @@ body {
         font-size: 20rem;
         font-weight: bold;
         cursor: pointer;
+    }
+
+    .tables {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .demTable {
+        margin: 0 auto;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+    .demTable th {
+        text-align: center;
+        border: 1px none #ffffff;
+        padding: 5px;
+        background: #ffffff;
+        color: #313030;
+    }
+
+    .demTable td {
+        text-align: center;
+        border: 1px none #ffffff;
+        padding: 5px;
+        background: #ffffff;
+        color: #000000;
     }
 
 }
@@ -1871,7 +1915,8 @@ body {
     }
 
     .dots {
-        text-align: center
+        text-align: center;
+        margin-bottom: 15rem;
     }
 
     .activeDot,
@@ -1950,4 +1995,34 @@ body {
         cursor: pointer;
     }
 
+    .tables {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        overflow-x: scroll;
+    }
+
+    .demTable {
+        float: left;
+        border: 1px none #ffffff;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+    .demTable th {
+        text-align: center;
+        border: 1px none #ffffff;
+        padding: 5px;
+        background: #ffffff;
+        color: #313030;
+    }
+
+    .demTable td {
+        text-align: center;
+        border: 1px none #ffffff;
+        padding: 5px;
+        background: #ffffff;
+        color: #313030;
+    }
 }
