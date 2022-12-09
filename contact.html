@@ -84,61 +84,57 @@
 
         <div class="contactGrid">
             <div class="form">
-                <section class="contactForm">
-                    <div class="formContainer">
-                        <form action="https://formsubmit.co/2052393518a89dc065cc1c4882e52cb9 " method="POST">
-                            <!--Name input-->
-                            <div class="form-group">
-                                <label for="name"><span class="requiredStar">*</span>Name</label><br>
-                                <input class="forminput name" type="text" id="firstName" name="firstName"
-                                    placeholder="First" required>
-                                <input class="forminput" type="text" id="lastName" name="lastName" placeholder="Last"
-                                    required>
-                            </div>
-                            <!--Email input-->
-                            <div class="form-group">
-                                <label for="email"><span class="requiredStar">*</span>E-mail</label><br>
-                                <input class="forminput" type="email" id="email" onselectstart="return false"
-                                    oncut="return false" oncopy="return false" onpaste="return false"
-                                    ondrag="return false" ondrop="return false" name="email"
-                                    placeholder="example@example.com" required>
-                            </div>
+                <div class="formContainer">
+                    <form action="https://formsubmit.co/2052393518a89dc065cc1c4882e52cb9 " method="POST">
+                        <!--Name input-->
+                        <div class="form-group">
+                            <label for="firstName"><span class="requiredStar">*</span>Name</label><br>
+                            <input class="forminput name" type="text" id="firstName" name="firstName"
+                                placeholder="First" required>
+                            <input class="forminput" type="text" id="lastName" name="lastName" placeholder="Last"
+                                required>
+                        </div>
+                        <!--Email input-->
+                        <div class="form-group">
+                            <label for="email"><span class="requiredStar">*</span>E-mail</label><br>
+                            <input class="forminput" type="email" id="email" oncut="return false" oncopy="return false"
+                                onpaste="return false" ondrag="return false" ondrop="return false" name="email"
+                                placeholder="example@example.com" required>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="confirmEmail"><span class="requiredStar">*</span>Confirm
-                                    E-mail</label><br>
-                                <input class="forminput" type="email" id="confirmEmail" onselectstart="return false"
-                                    oncut="return false" oncopy="return false" onpaste="return false"
-                                    ondrag="return false" ondrop="return false" autocomplete="nope" name="email"
-                                    placeholder="example@example.com" required>
-                            </div>
+                        <div class="form-group">
+                            <label for="confirmEmail"><span class="requiredStar">*</span>Confirm
+                                E-mail</label><br>
+                            <input class="forminput" type="email" id="confirmEmail" oncut="return false"
+                                oncopy="return false" onpaste="return false" ondrag="return false" ondrop="return false"
+                                autocomplete="off" name="email" placeholder="example@example.com" required>
+                        </div>
 
-                            <!--Number input-->
-                            <div class="form-group">
-                                <label for="mobileNumber"><span class="requiredStar">*</span>Mobile number</label><br>
+                        <!--Number input-->
+                        <div class="form-group">
+                            <label for="mobileNumber"><span class="requiredStar">*</span>Mobile number</label><br>
 
-                                <input class="forminput" type="tel" id="mobileNumber"
-                                    pattern="^\(?\+?([0-9]{1,3})?[-.\s]?([0-9]{3})[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$"
-                                    name="mobileNumber" required>
-                            </div>
+                            <input class="forminput" type="tel" id="mobileNumber"
+                                pattern="^\(?\+?([0-9]{1,3})?[-.\s]?([0-9]{3})[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$"
+                                name="mobileNumber" required>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="landlineNumber">Landline number</label><br>
-                                <input class="forminput" type="tel" id="landlineNumber"
-                                    onblur="validateLandlineNumber()" name="landlineNumber">
-                            </div>
+                        <div class="form-group">
+                            <label for="landlineNumber">Landline number</label><br>
+                            <input class="forminput" type="tel" id="landlineNumber" onblur="validateLandlineNumber()"
+                                name="landlineNumber">
+                        </div>
 
-                            <!--Message input-->
-                            <div class="form-group">
-                                <label for="message"><span class="requiredStar">*</span>Message</label>
-                                <textarea class="forminput" name="message" placeholder="Type message here..." required
-                                    rows="4" cols="70"></textarea>
-                            </div>
+                        <!--Message input-->
+                        <div class="form-group">
+                            <label for="message"><span class="requiredStar">*</span>Message</label>
+                            <textarea class="forminput" id="message" name="message" placeholder="Type message here..."
+                                required rows="4" cols="70"></textarea>
+                        </div>
 
-                            <button onclick="formValidation();" type="submit" name="Submit">Submit</button>
-                        </form>
-                    </div>
-                </section>
+                        <button onclick="formValidation();" type="submit" name="Submit">Submit</button>
+                    </form>
+                </div>
             </div>
             <div class="address">
                 <div class="contactTextBorder">
@@ -148,7 +144,7 @@
                         Ballyfin,<br>
                         Co. Laois.<br>
                         R32 V3V6<br>
-                        <a class="smallPhone" href="tel:=057 875 5992">057 8755992</a><br>
+                        <a class="smallPhone" href="tel:=0578755992">057 8755992</a><br>
                     </p>
                 </div>
             </div>
@@ -163,7 +159,5 @@
     </div>
 
 </body>
-
-
 
 </html>
