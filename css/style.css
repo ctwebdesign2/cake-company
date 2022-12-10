@@ -45,7 +45,7 @@ table {
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
 input,
 textarea {
-    -webkit-user-select: auto;
+    --webkit-user-select: auto;
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
@@ -77,8 +77,8 @@ meter {
     -moz-user-modify: read-write;
     -webkit-user-modify: read-write;
     overflow-wrap: break-word;
-    -webkit-line-break: after-white-space;
-    -webkit-user-select: auto;
+    --webkit-line-break: after-white-space;
+    --webkit-user-select: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
@@ -101,7 +101,7 @@ body {
 /*Overall style of content pages*/
 
 .bottomSpace {
-    padding-top: 70px;
+    height: 70px;
     background-image: url('images\ffffff.png');
 }
 
@@ -327,15 +327,6 @@ body {
     /*Form*/
     .form {
         grid-area: form;
-    }
-
-    .contact .contactForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        grid-area: contactForm;
-        text-align: left;
     }
 
     .formContainer {
@@ -1001,15 +992,6 @@ body {
         grid-area: form;
     }
 
-    .contact .contactForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        grid-area: contactForm;
-        text-align: left;
-    }
-
     .formContainer {
         width: 100%;
         max-width: 700rem;
@@ -1660,15 +1642,6 @@ body {
         grid-area: form;
     }
 
-    .contact .contactForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        grid-area: contactForm;
-        text-align: left;
-    }
-
     .formContainer {
         width: 100%;
         max-width: 700rem;
@@ -1962,7 +1935,7 @@ body {
 
     .imageContainer {
         width: 100%;
-        height: 70%;
+        height: 85%;
     }
 
     .weddingResourcesGrid button {
@@ -1976,14 +1949,13 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        overflow: hidden;
     }
 
     .textContainer {
         margin: auto;
         padding: 15rem 0;
         width: 90%;
-        height: 20%;
+        height: 15%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1995,34 +1967,53 @@ body {
         cursor: pointer;
     }
 
-    .tables {
-        margin: auto;
+    .rectangleContainer {
+        width: 70%;
+        height: 90%;
+        display: grid;
+        gap: 50rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .weddingResourceRectangle {
         width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        overflow-x: scroll;
+        height: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 0.40fr;
+        grid-template-areas:
+            'instagram'
+            'text';
     }
 
-    .demTable {
-        float: left;
-        border: 1px none #ffffff;
-        border-collapse: collapse;
-        padding: 5px;
+    .weddingResourceRectangle blockquote {
+        grid-area: instagram;
     }
 
-    .demTable th {
+    .weddingResourceRectangle rectangleText {
+        grid-area: text;
+    }
+
+    .photographyJoeInsta {
+        height: 99.5%;
+    }
+
+    .photographyAoileannInsta {
+        height: 99.5%;
+    }
+
+    .rectangleText {
         text-align: center;
-        border: 1px none #ffffff;
-        padding: 5px;
-        background: #ffffff;
-        color: #313030;
     }
 
-    .demTable td {
-        text-align: center;
-        border: 1px none #ffffff;
-        padding: 5px;
-        background: #ffffff;
-        color: #313030;
+    .weddingResourceRectangle h2 {
+        font-weight: bold;
+    }
+
+    .weddingResourceRectangle p {
+        height: 100%;
+        font-size: 20rem;
     }
 }
