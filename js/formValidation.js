@@ -72,11 +72,29 @@ function validateLandlineNumber() {
     return true;
 }
 
+// Validates that at least one checkbox is checked
+function validateCheckboxes() {
+    var checkbox = document.getElementsByTagName('input');
+
+    for (var i = 0; i < checkbox.length; i++) {
+        if (checkbox[i].type == 'checkbox') {
+            if (checkbox[i].checked) {
+                return true
+            }
+            else {
+                checkbox.setCustomValidity('Please select at least one checkbox');
+                return false;
+            }
+        }
+    }
+}
+
 function formValidation() {
     confirmEmail();
     validateEmail();
     validateMobileNumber();
     validateLandlineNumber();
+    validateCheckboxes();
 }
 
 /*Loads all the javascript on window load*/

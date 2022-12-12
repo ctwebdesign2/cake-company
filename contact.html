@@ -124,6 +124,95 @@
                                 name="landlineNumber">
                         </div>
 
+                        <!--Radio input-->
+                        <div class="form-group">
+                            <p><span class="requiredStar">*</span>Where did you find us?</p>
+
+                            <label class="radioContainer">Online search
+                                <input type="radio" name="radio" required>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="radioContainer">Friends / family
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="radioContainer">Social media
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!--Checkbox-->
+                        <div class="form-group">
+                            <p><span class="requiredStar">*</span>What flavours are you interested in?</p>
+                            <div class="checkBoxes">
+                                <label class="checkboxContainer">Chocolate Biscuit Cake
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkboxCheckmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkBoxes">
+                                <label class="checkboxContainer">Red Velvet
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkboxCheckmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkBoxes">
+                                <label class="checkboxContainer">Vanilla Sponge
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkboxCheckmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkBoxes">
+                                <label class="checkboxContainer">Lemon Poppyseed
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkboxCheckmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkBoxes">
+                                <label class="checkboxContainer">Pistachio and Cardamom
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkboxCheckmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkBoxes">
+                                <label class="checkboxContainer">Salted Caramel
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkboxCheckmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkBoxes">
+                                <label class="checkboxContainer">Belgian Chocolate
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkboxCheckmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!--Dropdown/selection menu-->
+                        <div class="form-group">
+                            <div class="selectdiv">
+                                <label for="celebrationType"><span class="requiredStar">*</span>What are you
+                                    celebrating:</label>
+                                <select name="celebrationType" id="celebrationType" required>
+                                    <option value="" selected>Please select an option</option>
+                                    <optgroup name="celebrationType" label="Wedding Cakes">
+                                        <option value="Wedding">Wedding</option>
+                                    </optgroup>
+                                    <optgroup name="celebrationType" label="Celebration Cakes">
+                                        <option value="Birthday cake">Birthday cake</option>
+                                        <option value="Christening Cake">Christening Cake
+                                        </option>
+                                        <option value="Anniversary Cake">Anniversary Cake
+                                        </option>
+                                        <option value="Communion Cake">Communion Cake</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
                         <!--Message input-->
                         <div class="form-group">
                             <label for="message"><span class="requiredStar">*</span>Message</label>
