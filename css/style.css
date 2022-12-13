@@ -858,32 +858,15 @@ body {
         cursor: pointer;
     }
 
-    .tables {
-        margin: auto;
-        width: 100%;
+    .weddingResourceRectangle h2 {
+        margin-top: 25rem;
+        font-weight: bold;
     }
 
-    .demTable {
-        margin: auto;
-        border: 1px none #ffffff;
-        border-collapse: collapse;
-        padding: 5px;
-    }
-
-    .demTable th {
-        text-align: center;
-        border: 1px none #ffffff;
-        padding: 5px;
-        background: #ffffff;
-        color: #313030;
-    }
-
-    .demTable td {
-        text-align: center;
-        border: 1px none #ffffff;
-        padding: 5px;
-        background: #ffffff;
-        color: #313030;
+    .weddingResourceRectangle p {
+        height: 100%;
+        font-size: 20rem;
+        margin-bottom: 25rem;
     }
 }
 
@@ -1700,6 +1683,66 @@ body {
         cursor: pointer;
     }
 
+    .rectangleContainer {
+        width: 70%;
+        height: 90%;
+        display: grid;
+        gap: 50rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .rectangleContainer {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 700px 700px;
+        grid-template-areas:
+            'weddingResourceRectangle1'
+            'weddingResourceRectangle2';
+    }
+
+    .weddingResourceRectangle1 {
+        grid-area: weddingResourceRectangle1;
+    }
+
+    .weddingResourceRectangle2 {
+        grid-area: weddingResourceRectangle2;
+    }
+
+    .weddingResourceRectangle {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 0.40fr;
+        grid-template-areas:
+            'instagram'
+            'text';
+    }
+
+    .weddingResourceRectangle .instaEmbed {
+        grid-area: instagram;
+        height: 100%;
+    }
+
+    .weddingResourceRectangle .rectangleText {
+        grid-area: text;
+        text-align: center;
+    }
+
+    .weddingResourceRectangle h2 {
+        margin-top: 25rem;
+        font-weight: bold;
+    }
+
+    .weddingResourceRectangle p {
+        height: 100%;
+        font-size: 20rem;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -2528,7 +2571,7 @@ body {
         margin: auto;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 0.40fr;
+        grid-template-rows: 600px 50px;
         grid-template-areas:
             'instagram'
             'text';
@@ -2542,12 +2585,8 @@ body {
         grid-area: text;
     }
 
-    .photographyJoeInsta {
-        height: 99.5%;
-    }
-
-    .photographyAoileannInsta {
-        height: 99.5%;
+    .instaEmbed {
+        height: 100%;
     }
 
     .rectangleText {
