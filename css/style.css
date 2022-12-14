@@ -766,18 +766,6 @@ body {
         height: 50rem;
     }
 
-    .prev {
-        border-radius: 0 5rem 5rem 0;
-    }
-
-    .next {
-        border-radius: 5rem 0 0 5rem;
-    }
-
-    .prev:hover, .next:hover {
-        background-color: white;
-    }
-
     /* Position the "next button" to the right */
     .next {
         right: 0;
